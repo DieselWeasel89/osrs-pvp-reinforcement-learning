@@ -1,0 +1,10 @@
+{
+  "tasks": [
+    {
+      "appliesTo": "/",
+      "taskLabel": "task-pvposrsbot",
+      "type": "launch"
+    }
+  ],
+  "version": "0.2.1"
+}

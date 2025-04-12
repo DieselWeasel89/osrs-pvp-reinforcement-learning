@@ -1,0 +1,65 @@
+{
+  "name": "NhEnv",
+  "description": "No Honor PvP environment for OSRS",
+  "version": "1.0",
+  "observations": [
+    "player_health",
+    "player_prayer",
+    "player_special_energy",
+    "player_overheads_active",
+    "player_protect_item_active",
+    "player_inventory_food",
+    "player_frozen",
+    "player_venomed",
+    "player_poisoned",
+    "opponent_health",
+    "opponent_prayer",
+    "opponent_special_energy",
+    "opponent_overheads_active",
+    "opponent_protect_item_active",
+    "opponent_inventory_food",
+    "opponent_frozen",
+    "opponent_venomed",
+    "opponent_poisoned",
+    "distance",
+    "tick_counter"
+  ],
+  "actions": [
+    "attack_dds",
+    "attack_whip",
+    "attack_msb",
+    "attack_ice_barrage",
+    "special_attack_dds",
+    "special_attack_ags",
+    "special_attack_gmaul",
+    "special_attack_claws",
+    "eat_shark",
+    "eat_angler",
+    "eat_karambwan",
+    "prayer_overhead_melee",
+    "prayer_overhead_range",
+    "prayer_overhead_magic",
+    "prayer_protect_item",
+    "freeze_ice_barrage",
+    "venom_attack",
+    "move_away"
+  ],
+  "rewards": {
+    "win": 1.0,
+    "loss": -1.0,
+    "draw": 0.0,
+    "health_advantage": 0.01
+  },
+  "termination_conditions": [
+    "player_health <= 0",
+    "opponent_health <= 0",
+    "tick_counter >= 100"
+  ],
+  "metadata": {
+    "max_ticks": 100,
+    "default_player_health": 99,
+    "default_player_prayer": 99,
+    "default_player_special_energy": 100,
+    "default_player_food": 10
+  }
+}
